@@ -21,18 +21,34 @@
     <sprites name="Helper">
       <sprite>sprites\spr_wall</sprite>
     </sprites>
-    <sprites name="Bird Room">
+    <sprites name="Park">
       <sprite>sprites\spr_bench</sprite>
       <sprite>sprites\spr_bird</sprite>
       <sprite>sprites\spr_path</sprite>
       <sprite>sprites\spr_lampost</sprite>
+      <sprite>sprites\spr_tree</sprite>
+      <sprite>sprites\spr_bushw</sprite>
     </sprites>
     <sprites name="House">
       <sprite>sprites\spr_redchair</sprite>
+      <sprite>sprites\spr_coathanger</sprite>
       <sprite>sprites\spr_greenchair</sprite>
       <sprite>sprites\spr_bluecouch</sprite>
+      <sprite>sprites\spr_firelight</sprite>
       <sprite>sprites\spr_housewall</sprite>
       <sprite>sprites\spr_rug</sprite>
+      <sprite>sprites\spr_fireplace</sprite>
+      <sprite>sprites\spr_coffeetable</sprite>
+      <sprite>sprites\spr_lamp</sprite>
+      <sprite>sprites\spr_door</sprite>
+      <sprite>sprites\spr_window</sprite>
+      <sprite>sprites\spr_bookshelf</sprite>
+      <sprite>sprites\spr_shadow</sprite>
+      <sprite>sprites\spr_painting</sprite>
+      <sprite>sprites\spr_mom</sprite>
+      <sprite>sprites\spr_sis</sprite>
+      <sprite>sprites\spr_boots</sprite>
+      <sprite>sprites\spr_dad</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -52,22 +68,38 @@
       <object>objects\obj_parentcollisions</object>
       <object>objects\obj_wall</object>
     </objects>
-    <objects name="Bird Room">
+    <objects name="Park">
       <object>objects\obj_bird</object>
       <object>objects\obj_lampost</object>
       <object>objects\obj_bench</object>
+      <object>objects\obj_bushw</object>
+      <object>objects\obj_tree</object>
       <object>objects\obj_path</object>
     </objects>
     <objects name="House">
       <object>objects\obj_housewall</object>
       <object>objects\obj_bluecouch</object>
+      <object>objects\obj_lamp</object>
+      <object>objects\obj_coffeetable</object>
+      <object>objects\obj_door</object>
       <object>objects\obj_rug</object>
       <object>objects\obj_redchair</object>
+      <object>objects\obj_fireplace</object>
       <object>objects\obj_greenchair</object>
+      <object>objects\obj_bookshelf</object>
+      <object>objects\obj_window</object>
+      <object>objects\obj_firelight</object>
+      <object>objects\obj_shadow</object>
+      <object>objects\obj_painting</object>
+      <object>objects\obj_mom</object>
+      <object>objects\obj_sis</object>
+      <object>objects\obj_coathanger</object>
+      <object>objects\obj_boots</object>
+      <object>objects\obj_dad</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_bird</room>
+    <room>rooms\rm_park</room>
     <room>rooms\rm_house</room>
   </rooms>
   <help>
