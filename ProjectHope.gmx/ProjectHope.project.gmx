@@ -4,9 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_tune</sound>
+  </sounds>
   <sprites name="sprites">
-    <sprites name="Basil">
+    <sprites name="Player">
       <sprites name="BasilwBird">
         <sprite>sprites\spr_player2_down</sprite>
         <sprite>sprites\spr_player2_up</sprite>
@@ -20,11 +22,14 @@
     </sprites>
     <sprites name="Helper">
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_empty</sprite>
+      <sprite>sprites\spr_credits</sprite>
     </sprites>
     <sprites name="Park">
       <sprite>sprites\spr_bench</sprite>
       <sprite>sprites\spr_bird</sprite>
       <sprite>sprites\spr_path</sprite>
+      <sprite>sprites\spr_endpath</sprite>
       <sprite>sprites\spr_lampost</sprite>
       <sprite>sprites\spr_tree</sprite>
       <sprite>sprites\spr_bushw</sprite>
@@ -50,6 +55,23 @@
       <sprite>sprites\spr_boots</sprite>
       <sprite>sprites\spr_dad</sprite>
     </sprites>
+    <sprites name="Snow">
+      <sprite>sprites\spr_snowpath</sprite>
+      <sprite>sprites\spr_snowtree</sprite>
+      <sprite>sprites\spr_snow1</sprite>
+      <sprite>sprites\spr_snow2</sprite>
+      <sprite>sprites\spr_snow3</sprite>
+      <sprite>sprites\spr_particles</sprite>
+      <sprite>sprites\spr_snowman</sprite>
+    </sprites>
+    <sprites name="Sea">
+      <sprite>sprites\spr_pier</sprite>
+      <sprite>sprites\spr_pierleg2</sprite>
+      <sprite>sprites\spr_pierleg1</sprite>
+      <sprite>sprites\spr_wave</sprite>
+      <sprite>sprites\spr_wave2</sprite>
+      <sprite>sprites\spr_wave3</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_woodfloor</background>
@@ -58,23 +80,38 @@
   <scripts name="scripts">
     <script>scripts\scr_move_state.gml</script>
     <script>scripts\scr_get_input.gml</script>
+    <script>scripts\scr_poemlines.gml</script>
+    <script>scripts\scr_poemlines_snow.gml</script>
+    <script>scripts\scrplayeralarm0.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\ft_poem</font>
+    <font>fonts\ft_titlefont</font>
+    <font>fonts\ft_small</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\obj_player</object>
-    <object>objects\obj_player2</object>
+    <objects name="Player">
+      <object>objects\obj_player</object>
+      <object>objects\obj_player2</object>
+    </objects>
     <objects name="Helper">
       <object>objects\obj_view</object>
+      <object>objects\obj_titleexit</object>
       <object>objects\obj_view2</object>
       <object>objects\obj_parentcollisions</object>
       <object>objects\obj_wall</object>
+      <object>objects\obj_tune</object>
+      <object>objects\obj_restart</object>
     </objects>
     <objects name="Park">
       <object>objects\obj_bird</object>
+      <object>objects\obj_bird2</object>
       <object>objects\obj_lampost</object>
       <object>objects\obj_bench</object>
       <object>objects\obj_bushw</object>
       <object>objects\obj_tree</object>
       <object>objects\obj_path</object>
+      <object>objects\obj_endpath</object>
     </objects>
     <objects name="House">
       <object>objects\obj_housewall</object>
@@ -92,15 +129,66 @@
       <object>objects\obj_shadow</object>
       <object>objects\obj_painting</object>
       <object>objects\obj_mom</object>
+      <object>objects\obj_houseexit</object>
       <object>objects\obj_sis</object>
       <object>objects\obj_coathanger</object>
       <object>objects\obj_boots</object>
       <object>objects\obj_dad</object>
     </objects>
+    <objects name="Snow">
+      <object>objects\obj_snowpath</object>
+      <object>objects\obj_snowtree</object>
+      <object>objects\obj_snow1</object>
+      <object>objects\obj_snow2</object>
+      <object>objects\obj_snow3</object>
+      <object>objects\obj_snowexit</object>
+      <object>objects\obj_particles</object>
+      <object>objects\obj_snowman</object>
+    </objects>
+    <objects name="Sea">
+      <object>objects\obj_pier</object>
+      <object>objects\obj_pierleg2</object>
+      <object>objects\obj_pierleg1</object>
+      <object>objects\obj_invisiblewall</object>
+      <object>objects\obj_wave</object>
+      <object>objects\obj_seaexit</object>
+      <object>objects\obj_wave2</object>
+      <object>objects\obj_wave3</object>
+    </objects>
+    <objects name="Poem">
+      <objects name="Stanza 1">
+        <object>objects\obj_line1</object>
+        <object>objects\obj_line2</object>
+        <object>objects\obj_line3</object>
+        <object>objects\obj_line4</object>
+      </objects>
+      <objects name="Stanza 2">
+        <object>objects\obj_line5</object>
+        <object>objects\obj_line6</object>
+        <object>objects\obj_line7</object>
+        <object>objects\obj_line8</object>
+      </objects>
+      <objects name="Stanza 3">
+        <object>objects\obj_line9</object>
+        <object>objects\obj_line10</object>
+        <object>objects\obj_line11</object>
+        <object>objects\obj_line12</object>
+      </objects>
+    </objects>
+    <objects name="Title and Credits">
+      <object>objects\obj_gametitle</object>
+      <object>objects\obj_instructions</object>
+      <object>objects\obj_credits</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_title</room>
     <room>rooms\rm_park</room>
     <room>rooms\rm_house</room>
+    <room>rooms\rm_snow</room>
+    <room>rooms\rm_sea</room>
+    <room>rooms\rm_end</room>
+    <room>rooms\rm_credits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

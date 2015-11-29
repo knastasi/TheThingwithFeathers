@@ -68,6 +68,10 @@
     <instance objName="obj_lampost" x="626" y="355" name="inst_56BCC71D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lampost" x="345" y="656" name="inst_00D81ADF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lampost" x="675" y="903" name="inst_AFEFF396" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_line1" x="-71" y="224" name="inst_738E9358" locked="0" code="" scaleX="40.90625" scaleY="1.77999997138977" colour="4294967295" rotation="0"/>
+    <instance objName="obj_line2" x="-81" y="349" name="inst_15DF2AB2" locked="0" code="" scaleX="40" scaleY="1.78125" colour="4294967295" rotation="0"/>
+    <instance objName="obj_line3" x="-28" y="641" name="inst_F71438A7" locked="0" code="" scaleX="34.34375" scaleY="2.44000005722046" colour="4294967295" rotation="0"/>
+    <instance objName="obj_line4" x="0" y="900" name="inst_8F8E8100" locked="0" code="" scaleX="34.8400001525879" scaleY="2.15625" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
