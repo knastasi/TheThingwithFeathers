@@ -101,6 +101,7 @@
       <object>objects\obj_parentcollisions</object>
       <object>objects\obj_wall</object>
       <object>objects\obj_tune</object>
+      <object>objects\obj_quit</object>
       <object>objects\obj_restart</object>
     </objects>
     <objects name="Park">
