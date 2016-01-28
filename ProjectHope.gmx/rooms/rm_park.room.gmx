@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>984</w>
+    <w>1008</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>-160</xoffset>
-    <yoffset>-298</yoffset>
+    <page>1</page>
+    <xoffset>504</xoffset>
+    <yoffset>-488</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -72,6 +72,7 @@
     <instance objName="obj_line2" x="-81" y="349" name="inst_15DF2AB2" locked="0" code="" scaleX="40" scaleY="1.78125" colour="4294967295" rotation="0"/>
     <instance objName="obj_line3" x="-28" y="641" name="inst_F71438A7" locked="0" code="" scaleX="34.34375" scaleY="2.44000005722046" colour="4294967295" rotation="0"/>
     <instance objName="obj_line4" x="0" y="900" name="inst_8F8E8100" locked="0" code="" scaleX="34.8400001525879" scaleY="2.15625" colour="4294967295" rotation="0"/>
+    <instance objName="obj_quit" x="857" y="-172" name="inst_E3DC4A22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

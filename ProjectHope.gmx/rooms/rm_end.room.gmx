@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>984</w>
+    <w>1008</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -26,7 +26,7 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
+    <page>1</page>
     <xoffset>-160</xoffset>
     <yoffset>-298</yoffset>
   </makerSettings>
@@ -63,6 +63,7 @@
     <instance objName="obj_line11" x="-29" y="269" name="inst_611EA23B" locked="0" code="" scaleX="35.1300010681152" scaleY="5.09375" colour="4294967295" rotation="0"/>
     <instance objName="obj_line12" x="-73" y="796" name="inst_E54C5876" locked="0" code="" scaleX="37.4099998474121" scaleY="3.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_bird2" x="420" y="865" name="inst_02B58DEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_quit" x="164" y="143" name="inst_999A7832" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
